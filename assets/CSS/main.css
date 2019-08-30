@@ -79,6 +79,54 @@
     width: 100%;
 }
 
+#t-blocks img:hover {
+    cursor: pointer;
+}
+
+#t-blocks .col-md-4 col-sm-6:hover .overlay {
+    opacity: 0.3;
+    transition: .5s ease-in;
+}
+
+#t-blocks .col-md-4 col-sm-6:hover {
+    opacity: 0.3;
+    transition: .5s ease-in;
+}
+
+.title {
+    position: absolute;
+    top: 31%;
+    text-align: center;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+}
+
+#second-background-img {
+    background-image: url(../Images/second-back-img.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+/*
+.card-image:hover .overlay {
+    opacity: 0.3;
+    transition: .5s ease-in;
+
+}
+
+.card-image:hover {
+    opacity: 0.3;
+    transition: .5s ease-in;
+
+}
+*/
+
 
 
 /* .navbar-toggler .navbar-toggler-icon{
