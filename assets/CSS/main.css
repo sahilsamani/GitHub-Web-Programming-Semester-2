@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #9398b5 !important;
+}
+
+/*************** INDEX PAGE STARTS HERE ****************/
+
 .navbar {
     /* background-color: lightblue; */
     padding-bottom: 0 !important;
@@ -30,10 +36,6 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* .navbar-toggler-icon{
-    color: #feeeee !important;
-    font-size: 20px;
-} */
 
 .navbar-light .navbar-toggler {
     color: #feeeee !important;
@@ -75,23 +77,6 @@ html {
 
 }
 
-/*
-.index-title h1 {
-    color: #e7f0f9;
-    text-align: center;
-    font-family: 'Lora', serif;
-    font-weight: 900;
-    background-image: url(../Images/text-img.jpg);
-    text-align: center;
-    font-family: 'Lora', serif;
-    font-weight: 900;
-    background-image: url(../Images/text-img.jpg);
-    background-size: cover;
-    background-size: 100% 100%;
-    color: transparent;
-    -webkit-background-clip: text;
-}
-*/
 
 .down-arrow-icon {
     text-align: center;
@@ -145,6 +130,80 @@ html {
     transition: .5s ease-in;
 }
 
+#t-blocks .t-blocks-title {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+#t-blocks .t-block-title-highlight {
+    color: #6666FF;
+    text-shadow: 11px 13px 11px black, 0 0 13px blue, 0 0 6px darkblue;
+}
+
+#t-blocks .t-blocks-title::before {
+    content: '';
+    background-color: #1f226f;
+    height: 4px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+#t-blocks .t-blocks-title::after {
+    content: '';
+    background-color: #5a64b7;
+    height: 9px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    display: block;
+    transform: translateY(0px);
+    text-shadow: 11px 13px 11px black, 0 0 13px blue, 0 0 13px darkblue;
+}
+
+
+#video-embed-1 .video-title {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+#video-embed-1 .video-title .video-title-highlight {
+    color: #6666FF;
+    text-shadow: 11px 13px 11px black, 0 0 13px blue, 0 0 6px darkblue;
+}
+
+#video-embed-1 .video-title::before {
+    content: '';
+    background-color: #1f226f;
+    height: 4px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+#video-embed-1 .video-title::after {
+    content: '';
+    background-color: #5a64b7;
+    height: 9px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    display: block;
+    transform: translateY(0px);
+    text-shadow: 11px 13px 11px black, 0 0 13px blue, 0 0 13px darkblue;
+}
+
+/*
 .title {
     position: absolute;
     top: 31%;
@@ -153,6 +212,7 @@ html {
     margin: 0 auto;
     transform: translate(-50%, -50%);
 }
+*/
 
 #second-background-img {
     background-image: url(../Images/second-back-img3.jpg);
@@ -259,6 +319,24 @@ html {
 }
 
 
+
+
+
+/**************** MACHINE LEARNING PAGE STARTS HERE **************/
+
+
+#machine-header-section {
+    background-image: url(../Images/machine-header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+
+    height: 100vh;
+}
 
 
 
