@@ -57,7 +57,7 @@ body {
 
 /**** Header Section ****/
 #index-header-section {
-    background-image: url(../Images/index-img.jpg);
+    background-image: url(../Images/heroShowcase.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -112,13 +112,55 @@ body {
 */
 
 
-.down-arrow-icon {
+/****** Header Button *****/
+
+.header-button {
     text-align: center;
-    font-size: 24px;
     position: relative;
-    bottom: 64px;
+    bottom: 42px;
 }
 
+.header-button .btn {
+    padding: 5px;
+    border-radius: 20%;
+    background: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    color: white;
+}
+
+.header-button .btn:hover {
+    background-color: transparent !important;
+
+}
+
+/*
+figure {
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+figcaption {
+    background: rgba(255, 0, 255, 0.4);
+    font-family: 'Niconne', cursive;
+    font-size: 4em;
+    text-align: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    padding-top: 30%;
+    visibility: hidden;
+    color: yellow;
+    text-shadow: 5px 10px 1px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+*/
 
 .index-sub-title h3 {
     color: #e7f0f9;
