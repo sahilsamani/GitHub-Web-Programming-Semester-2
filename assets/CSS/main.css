@@ -210,6 +210,7 @@ figcaption {
     color: #4e4e67;
 }
 
+/*
 #t-blocks .col-md-4 col-sm-6:hover .overlay {
     opacity: 0.3;
     transition: .5s ease-in;
@@ -219,6 +220,7 @@ figcaption {
     opacity: 0.3;
     transition: .5s ease-in;
 }
+*/
 
 #t-blocks .t-blocks-title {
     text-align: center;
@@ -227,6 +229,8 @@ figcaption {
     padding-top: 20px;
 }
 
+
+/*FIGURE SECTION*/
 /* Figure */
 #t-blocks .t-block-hover {
     height: 500px;
@@ -263,6 +267,8 @@ figcaption {
 
 }
 
+
+
 /*
 #t-blocks .t-block-hover:hover > #t-blocks .t-block-content-hover {
     visibility: visible;
@@ -278,6 +284,7 @@ figcaption {
     visibility: visible !important;
 }
 */
+/*FIGURE SECTION ENDS HERE*/
 
 
 #t-blocks .t-blocks-title::before {
@@ -502,9 +509,93 @@ figcaption {
     position: relative;
     top: 0px;
     bottom: 0px;
-
     height: 100vh;
 }
+
+
+#data-visual-header-section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #181818;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    position: relative;
+}
+
+
+
+
+/******************* WORLD MAP PAGE STARTS HERE *****************/
+
+#world-header-section {
+    background-image: url(../Images/worldMap.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    height: 100vh;
+}
+
+#world-header-section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #181818;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    position: relative;
+}
+
+
+
+#world-map .world-map-title h1 {
+    color: #4e4e67;
+}
+
+#world-map .world-map-title {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+#world-map .world-map-title::before {
+    content: '';
+    background-color: #1f226f;
+    height: 4px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+#world-map .world-map-title::after {
+    content: '';
+    background-color: #5a64b7;
+    height: 9px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    display: block;
+    transform: translateY(0px);
+    text-shadow: 11px 13px 11px black, 0 0 13px blue, 0 0 13px darkblue;
+}
+
+
 
 /*
 .card-image:hover .overlay {
