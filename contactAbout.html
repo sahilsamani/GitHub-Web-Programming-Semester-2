@@ -1,29 +1,272 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Relive the memorable and historical works of the renowned Australian Architect, Robin Boyd">
+    <meta name="keywords" content="Data Science, Artificial Intelligence, Machine Learning, Data Visualisation">
+    <meta name="author" content="Sahil Samani">
+    <link rel="stylesheet" href="./assets/CSS/reset.css">
+    <link rel="stylesheet" href="./assets/CSS/main.css?w=400">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="contactUs-header-section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="./assets/Images/logo-design2.png" alt="Logo Design"></a>
+                <button class="navbar-toggler hamburger--collapse is-active" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="machineLearning.html">MACHINE LEARNING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dataVisualisation.html">DATA VISUALISATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="worldMap.html">WORLD MAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn nav-button" href="contactAbout.html">CONNECT WITH US!</a>
+                        </li>
+                    </ul>
                 </div>
-            </li>
-        </ul>
+            </nav>
+
+        </div>
+
+
+        <div class="wrapper">
+            <div class="main-content">
+                <div class="contact-title header-styling">
+                    <h1>LEARN ABOUT US!</h1>
+                </div>
+
+                <div class="common-sub-title">
+                    <h3>Data Scientist: The Sexiest Job of the 21st Century. <br> Thomas H. Davenport and D.J. Patil, 2012.</h3>
+                </div>
+
+                <div class="header-button">
+                    <a href="#t-blocks"><button type="button" class="btn">GET STARTED!</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section id="t-blocks">
+        <div class="t-blocks-title">
+            <h1>GET TO KNOW OUR STORY!</h1>
+        </div>
+        <div class="container-fluid" style="margin: 0; width: 100%;">
+            <div class="row">
+                <figure class="col-md-4 col-sm-6" style="padding:0px;">
+                    <img src="./assets/Images/robotImg_xs.jpg" alt="Floriade" class="img-responsive" style="width: 100%;">
+                    <figcaption>
+                        <h1 class="common-title">MACHINE LEARNING</h1>
+                        <p class="common-para">Machine learning is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead.</p>
+                        <a href="https://www.edx.org/course/machine-learning-data-science-analytics-1"><button class="t-block-btn" type="button">LEARN MORE!</button></a>
+                    </figcaption>
+                </figure>
+
+                <figure class="col-md-4 col-sm-6" style="padding:0px;">
+                    <img src="./assets/Images/amazonAlexa_xs.jpg" alt="Floriade" class="img-responsive" style="width: 100%;">
+                    <figcaption>
+                        <h1 class="common-title">DATA ANALYSIS</h1>
+                        <p class="common-para">Data analysis is a process of inspecting, cleansing, transforming and modeling data with the goal of discovering useful information, informing conclusions and supporting decision-making</p>
+                        <a href="https://towardsdatascience.com/tagged/data-analysis"><button class="t-block-btn" type="button">LEARN MORE!</button></a>
+                    </figcaption>
+                </figure>
+
+
+                <figure class="col-md-4 col-sm-6" style="padding:0px;">
+                    <img src="./assets/Images/robotPiano_xs.jpg" alt="Floriade" class="img-responsive" style="width: 100%;">
+                    <figcaption>
+                        <h1 class="common-title">PROGRAMMING <br> LANGUAGES</h1>
+                        <p class="common-para">A programming language is a formal language, which comprises a set of instructions that produce various kinds of output.</p>
+                        <a href="https://medium.com/datadriveninvestor/top-6-data-science-programming-languages-for-2019-39ba1b6819a8"><button class="t-block-btn" type="button">LEARN MORE!</button></a>
+                    </figcaption>
+                </figure>
+
+                <figure class="col-md-4 col-sm-6" style="padding:0px;">
+                    <img src="./assets/Images/clouds_xs.jpg" alt="Floriade" class="img-responsive" style="width: 100%;">
+                    <figcaption>
+                        <h1 class="common-title">DATA VISUALISATION</h1>
+                        <p class="common-para">Data visualization is the graphic representation of data. It involves producing images that communicate relationships among the represented data to viewers of the images</p>
+                        <a href="https://towardsdatascience.com/data-visualization/home"><button class="t-block-btn" type="button">LEARN MORE!</button></a>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-4 col-sm-6" style="padding:0px;">
+                    <img src="./assets/Images/drone_xs.jpg" alt="Floriade" class="img-responsive" style="width: 100%;">
+                    <figcaption>
+                        <h1 class="common-title">ARTIFICIAL INTELLIGENCE</h1>
+                        <p class="common-para">Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction</p>
+                        <a href="https://towardsdatascience.com/role-of-data-science-in-artificial-intelligence-950efedd2579"><button class="t-block-btn" type="button">LEARN MORE!</button></a>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-4 col-sm-6" style="padding:0px;">
+                    <img src="./assets/Images/coinTable_xs.jpg" alt="Floriade" class="img-responsive" style="width: 100%;">
+                    <figcaption>
+                        <h1 class="common-title">STATISTICS</h1>
+                        <p class="common-para">Statistics is the discipline that concerns the collection, organization, displaying, analysis, interpretation and presentation of data</p>
+                        <a href="https://elitedatascience.com/learn-statistics-for-data-science"><button class="t-block-btn" type="button">LEARN MORE!</button></a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div id="second-background-img"></div>
+    </section>
+
+
+
+
+    <section id="video-embed-1">
+        <div class="video-title">
+            <h1> DATA SCIENCE GEEKS</h1>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <div class="container-fluid" style="margin-bottom: -15px;">
+        <div class="row">
+
+
+            <div class="col-md-6 col-sd-6" style="padding-left: 0px; padding-right: 0px;">
+
+                <iframe width="100%" height="320" src="https://www.youtube.com/embed/X3paOmcrTjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+            <div class="col-md-6 col-sd-6" style="padding-left: 0px; padding-right: 0px;">
+                <iframe width="100%" height="320" src="https://www.youtube.com/embed/0jQ25PSyb_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
     </div>
-</nav>
+
+
+
+
+
+    <footer id=footer-section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1><span class="footer-text-highlight">Software</span> Eye</h1>
+                    <p class="footer-text-declaration">This website was produced by students in the Faculty of Science and Technology, University of Canberra,</p>
+                </div>
+
+                <div class="col-md-4">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="machineLearning.html">MACHINE LEARNING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dataVisualisation.html">DATA VISUALISATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="worldMap.html">WORLD MAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="contactAbout.html">CONNECT WITH US!</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-section-right">
+
+                        <div class="footer-copyright-section">
+                            <p class="copyright">&copy; Software Eye | Designed and Coded By Sahil Samani, 2019</p>
+                        </div>
+
+                        <div class="social-media-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-google"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--
+    <footer id="footer-section">
+        <div class="container">
+            <div class="footer-section-left">
+
+                <h1><span class="footer-text-highlight">Software</span> Eye</h1>
+
+                <p class="footer-text-declaration">This website was produced by students in the Faculty of Arts & Design, University of Canberra,</p>
+            </div>
+
+
+            <div class="footer-section-center">
+                <ul class="website-footer-links">
+                    <li><a href="desc.html">Description</a></li>
+                    <li><a href="statementOfSig.html">Statement Of Significance</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="boyd.html">Robin Boyd</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section-right">
+
+                <div class="footer-copyright-section">
+                    <p class="copyright">&copy; Churchill House | Designed and Coded By Sahil Samani, 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+-->
+
+
+
+</body>
+
+</html>
