@@ -312,15 +312,15 @@ figure:hover > img {
 /*T-block title section */
 #t-blocks .common-title {
     font-weight: 500;
-    margin-top: 79px;
+    margin-top: 50px;
     font-size: 30px;
-    /* margin: 51px; */
 
 
 }
 
 #t-blocks .common-para {
     padding: 10px;
+    font-size: 14px;
 }
 
 /*Figure Section Ends Here*/
@@ -538,85 +538,128 @@ figure:hover > img {
 
 /************** C - BLOCK SECTION ***********/
 
-/*
-#c-blocks .col-md-6 .c-block-img1 {
-    margin-bottom: 40px;
-    height: 210px !important;
-    background-image: url(assets/Images/googleLogo_xs.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20%;
-    background-position: center;
+.text-container {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 
-#c-blocks .col-md-6 .c-block-img1:hover {
-    background-color: transparent !important;
-    cursor: pointer;
+.content {
+    color: black;
+    font-size: 15px;
+    position: relative;
+    bottom: 33px;
+
+
+}
+
+/* COL-MD 6 - SECTION*/
+
+.col-md-6:hover {
+    opacity: 10;
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
+
+}
+
+.col-md-6:hover .text-container {
+    opacity: 2;
+}
+
+.col-md-6:hover .text-container .content {
+    color: white;
+
+}
+
+.col-md-6:hover .c-block-img1 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
 }
 
 
-#c-blocks .col-md-6 .c-block-img2 {
-    margin-bottom: 40px;
-    height: 210px !important;
-    background-image: url(assets/Images/ibm_xs.png) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20%;
+.col-md-6:hover .c-block-img2 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
 
-
-
-    background-position: center;
 }
 
 
-#c-blocks .col-md-6 .c-block-img3 {
-    margin-bottom: 40px;
-    height: 210px !important;
-    background-image: url(assets/Images/microsoftLogo_xs.png) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20%;
+.col-md-6:hover .c-block-img4 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
 
+}
 
-    background-position: center;
+.col-md-6:hover .c-block-img5 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
 }
 
 
-#c-blocks .col-md-6 .c-block-img4 {
-    margin-bottom: 40px;
-    height: 210px !important;
-    background-image: url(assets/Images/oracleLogo_xs.png) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20%;
 
-    background-position: center;
+
+
+
+/* COL-MD 12 - SECTION */
+
+
+.col-md-12:hover {
+    opacity: 10;
+    filter: brightness(0.7) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
+}
+
+.col-md-12:hover .c-block-img3 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
+}
+
+.col-md-12:hover .c-block-img6 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
 }
 
 
-#c-blocks .col-md-6 .c-block-img5 {
-    margin-bottom: 40px;
-    height: 210px !important;
-    background-image: url(assets/Images/googleLogo_xs.png) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20%;
+.col-md-12:hover .text-container {
+    opacity: 2;
+}
 
-    background-position: center;
+.col-md-12:hover .text-container .content {
+    color: white;
+
 }
 
 
-#c-blocks .col-md-6 .c-block-img6 {
-    margin-bottom: 40px;
-    height: 210px !important;
-    background-image: url(assets/Images/amazon_xs.jpg) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20%;
-    background-position: center;
-}
-*/
+
 
 
 
@@ -741,73 +784,3 @@ figure:hover > img {
     width: 100%;
     height: 100%;
 }
-
-/*
-.main-content {
-    position: relative;
-}
-
-
-
-#world-map .world-map-title h1 {
-    color: #4e4e67;
-}
-
-#world-map .world-map-title {
-    text-align: center;
-    font-family: 'Lora', serif;
-    font-weight: 500;
-    padding-top: 20px;
-}
-
-#world-map .world-map-title::before {
-    content: '';
-    background-color: #1f226f;
-    height: 4px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    transform: translateY(63px);
-}
-
-#world-map .world-map-title::after {
-    content: '';
-    background-color: #5a64b7;
-    height: 9px;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 45px;
-    display: block;
-    transform: translateY(0px);
-    text-shadow: 11px 13px 11px black, 0 0 13px blue, 0 0 13px darkblue;
-}*/
-
-
-
-
-
-/*
-.card-image:hover .overlay {
-    opacity: 0.3;
-    transition: .5s ease-in;
-
-}
-
-.card-image:hover {
-    opacity: 0.3;
-    transition: .5s ease-in;
-
-}
-*/
-
-
-
-/* .navbar-toggler .navbar-toggler-icon{
-    color: #feeeee !important;
-    font-size: 20px;
-} */
-
-/* outline: none !important;
-    border-radius: 50px 0 50px 0; */
