@@ -16,10 +16,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-----------This Will Read The Excel file------------>
+    <script src="js/xlsx.full.min.js"></script>
+    <!--This is the E-Charts code-->
+    <script src="./assets/JavaScript/echarts-en.js"></script>
+    <script src="./assets/JavaScript/jquery.min.js"></script>
+
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color:black; height:100%; overflow-x: hidden;">
 
     <header id="data-visual-header-section">
         <div class="container-fluid">
@@ -58,7 +64,7 @@
             </div>
 
             <div class="common-sub-title">
-                <h3>Data Visualisation: Is the Graphic Representation of Data.</h3>
+                <h3>Data Visualisation: Is the Graphic Representation of Data. It involves producing images that communicate relationships among the represented data to viewers of the images</h3>
             </div>
 
             <div class="header-button">
@@ -68,3 +74,29 @@
         </div>
 
     </header>
+
+
+    <section id="common-section">
+        <div class="common-section-title">
+            <h1>LOAD AN EXCEL FILE!</h1>
+        </div>
+
+    </section>
+
+    <section id="user-browse-section">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="text-center col-md-12">
+                    <div style="width: 100%;  margin-top: 20px; margin-left: 20px;">
+                        <input id="select_text" type="text" placeholder="Browse Excel file" />
+                        <input id="select_file" type="file" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
