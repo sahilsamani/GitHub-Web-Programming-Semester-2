@@ -734,6 +734,7 @@ figure:hover > img {
 #common-section .common-section-title {
     text-align: center;
     font-family: 'Lora', serif;
+    border-top: 4px solid #005e8a;
     font-weight: 500;
     padding-top: 20px;
 }
