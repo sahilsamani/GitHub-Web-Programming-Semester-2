@@ -1,7 +1,8 @@
 // GOOGLE MAPS SECTION
 
+
 // Declare a variable for map
-var googleMap;
+var map;
 // Get lattitude and longitude of Canberra Centre
 var unitedStatesAmerica = new google.maps.LatLng(51.5073509, -0.1277583);
 // Initialise the map
@@ -13,10 +14,13 @@ function initialiseGoogleMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
+
     // Create a map object for Canberra Centre 
     // using canberraMap and the <div> element with id="googleMap"
     map = new google.maps.Map(
         document.getElementById("googleMap"), americaMap);
+
+    google.maps.event.trigger(map, "resize");
 
     // Add markers below this line
 
@@ -30,12 +34,12 @@ function initialiseGoogleMap() {
 
 
     // Add information data to each google marker
-    insertGoogleInfoWindow
-    insertIBMInfoWindow
-    insertMicrosoftInfoWindow
-    insertOracleInfoWindow
-    insertSASInfoWindow
-    insertAmazonInfoWindow
+    //    insertGoogleInfoWindow
+    //    insertIBMInfoWindow
+    //    insertMicrosoftInfoWindow
+    //    insertOracleInfoWindow
+    //    insertSASInfoWindow
+    //    insertAmazonInfoWindow
 
 
 }
@@ -132,14 +136,32 @@ function insertOracleMarker(map) {
 
     OracleLocationMarker.setMap(map);
 
+    // This block of code is for the small info window
+    var contentOracle =
+        ' <h1 style="text-align: center;">ORACLE CORPORATION</h1>' +
+        ' <img src="./assets/Images/oracleInfoImg.jpg" ' +
+        '      style="float:left; width: 34%; margin-right:10px;">' +
+        ' <p style = "text-align: center;"><b>ORACLE</b> is an American multinational developer ' +
+        'of analytics software based in Cary, North Carolina. SAS develops and markets a suite of analytics software, ' +
+        'which helps access, manage, analyze and report on data to aid in decision-making.<br>' +
+        '<a href="https://www.sas.com/en_us/home.html"><button type="button" class="common-btn-styling" style="margin-top: 30px; padding: 6px; border-radius: 20%; background-color: #335977; color: white; border-color: #000000; text-decoration: none;">LEARN MORE!</button></a>' +
+        ' </p>';
+
+
+    var infoOracle = new google.maps.InfoWindow({
+        content: contentOracle
+    });
+
 
     var OracleLocationInfo = new google.maps.InfoWindow({
         content: "ORACLE"
     });
 
     google.maps.event.addListener(OracleLocationMarker, 'click', function () {
-        OracleLocationInfo.open(map, OracleLocationMarker);
+        OracleLocationInfo,
+        infoOracle.open(map, OracleLocationMarker);
     });
+
 }
 
 
@@ -158,15 +180,37 @@ function insertSASMarker(map) {
 
     SASLocationMarker.setMap(map);
 
+    // This block of code is for the small info window
+    var contentSAS =
+        ' <h1 style="text-align: center;">SAS INSTITUTE</h1>' +
+        ' <img src="./assets/Images/sasInfoImg.jpg" ' +
+        '      style="float:left; width: 34%; margin-right:10px;">' +
+        ' <p style = "text-align: center;"><b>SAS</b> is an American multinational developer ' +
+        'of analytics software based in Cary, North Carolina. SAS develops and markets a suite of analytics software, ' +
+        'which helps access, manage, analyze and report on data to aid in decision-making.<br>' +
+        '<a href="https://www.sas.com/en_us/home.html"><button type="button" class="common-btn-styling" style="margin-top: 30px; padding: 6px; border-radius: 20%; background-color: #335977; color: white; border-color: #000000; text-decoration: none;">LEARN MORE!</button></a>' +
+        ' </p>';
+
+
+    var infoSAS = new google.maps.InfoWindow({
+        content: contentSAS
+    });
+
+
+
 
     var SASLocationInfo = new google.maps.InfoWindow({
         content: "SAS"
     });
 
     google.maps.event.addListener(SASLocationMarker, 'click', function () {
-        SASLocationInfo.open(map, SASLocationMarker);
+        SASLocationInfo,
+        infoSAS.open(map, SASLocationMarker);
     });
+
 }
+
+
 
 
 // Amazon Marker Function
@@ -184,6 +228,7 @@ function insertAmazonMarker(map) {
 
     AmazonLocationMarker.setMap(map);
 
+    // This block of code is for the small info window
     var contentAmazon =
         ' <h1 style="text-align: center;">AMAZON</h1>' +
         ' <img src="./assets/Images/amazonInfoImg.jpg" ' +

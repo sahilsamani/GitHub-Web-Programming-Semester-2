@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <!-----------This Will Read The Excel file------------>
     <script src="./assets/JavaScript/xlsx.full.min.js"></script>
     <!--This is the E-Charts code-->
@@ -65,7 +66,7 @@
             </div>
 
             <div class="common-sub-title">
-                <h3>Data Visualisation: Is the Graphic Representation of Data. It involves producing images that communicate relationships among the represented data to viewers of the images</h3>
+                <h3>Data Visualisation: Is the Graphic Representation of Data. It involves producing <br> images that communicate relationships among the represented data to viewers of the images</h3>
             </div>
 
             <div class="header-button">
@@ -94,7 +95,7 @@
                     <input id="select_file" type="file" />
                 </div>
 
-                <div id="container" style="background-color:black; height:100%;"></div>
+                <div id="container" style="height:100%;"></div>
 
             </div>
 
@@ -250,15 +251,7 @@
                 tooltip: {
                     trigger: 'item',
                 },
-                title: {
-                    text: 'Data Visualisation',
-                    left: 'center',
-                    top: 5,
-                    itemGap: 0,
-                    textStyle: {
-                        color: '#eee'
-                    }
-                },
+
                 toolbox: {
                     show: true,
                     left: 'left',

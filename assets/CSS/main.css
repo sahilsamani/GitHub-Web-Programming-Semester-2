@@ -12,7 +12,7 @@ html {
 h1,
 h2,
 h3 {
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -84,7 +84,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    background-color: #202020;
+    background-color: #000000;
     opacity: 0.7;
     width: 100%;
     height: 100%;
@@ -101,7 +101,7 @@ body {
 .header-styling h1 {
     color: white;
     text-align: center;
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 540;
     position: relative;
     bottom: 64px;
@@ -145,7 +145,7 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 1.5;
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
     position: relative;
     bottom: 64px;
 }
@@ -407,7 +407,7 @@ figure:hover > img {
 }
 
 #footer-section h1 {
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
     color: #feeeeeee;
 }
 
@@ -525,8 +525,8 @@ figure:hover > img {
     content: '';
     display: block;
     position: absolute;
-    background-color: #181818;
-    opacity: 0.7;
+    background-color: #000000;
+    opacity: 0.8;
     width: 100%;
     height: 100%;
 }
@@ -564,55 +564,48 @@ figure:hover > img {
     color: black;
     font-size: 15px;
     position: relative;
-    bottom: 33px;
+    bottom: 0px;
 
 
 }
 
 /* COL-MD 6 - SECTION*/
 
-.col-md-6:hover {
+#c-blocks .col-md-6:hover {
     opacity: 10;
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 10% !important;
     clear: both;
+    /*
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
+    margin-bottom: 0px;
+*/
 
 
 }
 
-.col-md-6:hover .text-container {
+.text-center {
+    position: relative !important;
+    width: 100% !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+
+
+#c-blocks .col-md-6:hover .text-container {
     opacity: 2;
 }
 
-.col-md-6:hover .text-container .content {
+#c-blocks .col-md-6:hover .text-container .content {
     color: #ffffff;
 
 }
 
-.col-md-6:hover .c-block-img1 {
-    filter: brightness(0.6) !important;
-    transition: 0.7s !important;
-    border-radius: 10% !important;
-}
-
-
-.col-md-6:hover .c-block-img2 {
-    filter: brightness(0.6) !important;
-    transition: 0.7s !important;
-    border-radius: 10% !important;
-
-}
-
-
-.col-md-6:hover .c-block-img4 {
-    filter: brightness(0.6) !important;
-    transition: 0.7s !important;
-    border-radius: 10% !important;
-
-}
-
-.col-md-6:hover .c-block-img5 {
+#c-blocks .col-md-6:hover .c-block-img1 {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 10% !important;
@@ -621,6 +614,32 @@ figure:hover > img {
 
 
 
+#c-blocks .col-md-6:hover .c-block-img2 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
+
+}
+
+
+
+
+#c-blocks .col-md-6:hover .c-block-img4 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+
+
+}
+
+#c-blocks .col-md-6:hover .c-block-img5 {
+    filter: brightness(0.6) !important;
+    transition: 0.7s !important;
+    border-radius: 10% !important;
+    margin: 10px 0px 0px 0px;
+
+}
 
 
 
@@ -633,6 +652,12 @@ figure:hover > img {
     transition: 0.7s !important;
     border-radius: 10% !important;
     clear: both;
+    /*
+    margin-left: 1px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+*/
 
 }
 
@@ -640,6 +665,7 @@ figure:hover > img {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 10% !important;
+    margin: 10px 0px 0px 0px;
 
 }
 
@@ -647,6 +673,7 @@ figure:hover > img {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 10% !important;
+    margin: 10px 0px 0px 0px;
 
 }
 
@@ -684,7 +711,7 @@ figure:hover > img {
     content: '';
     display: block;
     position: absolute;
-    background-color: #181818;
+    background-color: #000000;
     opacity: 0.7;
     width: 100%;
     height: 100%;
@@ -715,8 +742,8 @@ figure:hover > img {
     content: '';
     display: block;
     position: absolute;
-    background-color: #181818;
-    opacity: 0.6;
+    background-color: #000000;
+    opacity: 0.7;
     width: 100%;
     height: 100%;
 }
@@ -734,7 +761,6 @@ figure:hover > img {
 #common-section .common-section-title {
     text-align: center;
     font-family: 'Lora', serif;
-    border-top: 4px solid #005e8a;
     font-weight: 500;
     padding-top: 20px;
 }
@@ -782,8 +808,13 @@ figure:hover > img {
     content: '';
     display: block;
     position: absolute;
-    background-color: #181818;
-    opacity: 0.7;
+    background-color: #000000;
+    opacity: 0.8;
     width: 100%;
     height: 100%;
+}
+
+#aboutUs-section .col-md-6 {
+    padding: 0px !important;
+    text-align: center !important;
 }
