@@ -54,18 +54,35 @@ function insertGoogleMarker(map) {
     var googleLocationMarker = new google.maps.Marker({
         position: googleLocation,
         icon: {
-            url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
+            url: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png",
+            scaledSize: new google.maps.Size(25, 25)
         }
     });
 
     googleLocationMarker.setMap(map);
+
+    // This block of code is for the small info window
+    var contentGoogle =
+        ' <h1 style="text-align: center;">Google CORPORATION</h1>' +
+        ' <img src="./assets/Images/googleInfoImg.jpg"' +
+        '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
+        ' <p style = "text-align: center;"><b>IBM</b> is an American multinational technology company ' +
+        'that specializes in Internet - related services and products which include online advertising technologies, ' +
+        'search engine <br>' +
+        '<a href="https://about.google/"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        ' </p>';
+
+    var infoGoogle = new google.maps.InfoWindow({
+        content: contentGoogle
+    });
 
     var googleLocationInfo = new google.maps.InfoWindow({
         content: "GOOGLE"
     });
 
     google.maps.event.addListener(googleLocationMarker, 'click', function () {
-        googleLocationInfo.open(map, googleLocationMarker);
+        googleLocationInfo,
+        infoGoogle.open(map, googleLocationMarker);
     });
 }
 
@@ -85,12 +102,27 @@ function insertIBMMarker(map) {
 
     IBMLocationMarker.setMap(map);
 
+    // This block of code is for the small info window
+    var contentIBM =
+        ' <h1 style="text-align: center;">IBM CORPORATION</h1>' +
+        ' <img src="./assets/Images/ibmInfoImg.jpg"' +
+        '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
+        ' <p style = "text-align: center;"><b>IBM</b> is an American multinational information technology company ' +
+        'headquartered in Armonk, New York. The company produces and sells computer hardware, middleware and software, <br>' +
+        '<a href="https://www.ibm.com/au-en"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        ' </p>';
+
+    var infoIBM = new google.maps.InfoWindow({
+        content: contentIBM
+    });
+
     var IBMLocationInfo = new google.maps.InfoWindow({
         content: "IBM"
     });
 
     google.maps.event.addListener(IBMLocationMarker, 'click', function () {
-        IBMLocationInfo.open(map, IBMLocationMarker);
+        IBMLocationInfo,
+        infoIBM.open(map, IBMLocationMarker);
     });
 }
 
@@ -110,13 +142,31 @@ function insertMicrosoftMarker(map) {
 
     MicrosoftLocationMarker.setMap(map);
 
+    // This block of code is for the small info window
+    var contentMicrosoft =
+        ' <h1 style="text-align: center;">MICROSOFT CORPORATION</h1>' +
+        ' <img src="./assets/Images/microsoftInfoImg.jpg"' +
+        '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
+        ' <p style = "text-align: center;"><b>MICROSOFT</b> is an American multinational technology company ' +
+        'with headquarters in Redmond, Washington. The company develops, manufactures, licenses, supports, ' +
+        'and sells computer software <br>' +
+        '<a href="https://www.microsoft.com/en-au"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        ' </p>';
+
+
+    var infoMicrosoft = new google.maps.InfoWindow({
+        content: contentMicrosoft
+    });
+
+
 
     var MicrosoftLocationInfo = new google.maps.InfoWindow({
         content: "MICROSOFT"
     });
 
     google.maps.event.addListener(MicrosoftLocationMarker, 'click', function () {
-        MicrosoftLocationInfo.open(map, MicrosoftLocationMarker);
+        MicrosoftLocationInfo,
+        infoMicrosoft.open(map, MicrosoftLocationMarker);
     });
 }
 
@@ -130,7 +180,8 @@ function insertOracleMarker(map) {
     var OracleLocationMarker = new google.maps.Marker({
         position: OracleLocation,
         icon: {
-            url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+            url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png",
+            scaledSize: new google.maps.Size(20, 20)
         }
     });
 
@@ -140,11 +191,11 @@ function insertOracleMarker(map) {
     var contentOracle =
         ' <h1 style="text-align: center;">ORACLE CORPORATION</h1>' +
         ' <img src="./assets/Images/oracleInfoImg.jpg" ' +
-        '      style="float:left; width: 34%; margin-right:10px;">' +
-        ' <p style = "text-align: center;"><b>ORACLE</b> is an American multinational developer ' +
-        'of analytics software based in Cary, North Carolina. SAS develops and markets a suite of analytics software, ' +
-        'which helps access, manage, analyze and report on data to aid in decision-making.<br>' +
-        '<a href="https://www.sas.com/en_us/home.html"><button type="button" class="common-btn-styling" style="margin-top: 30px; padding: 6px; border-radius: 20%; background-color: #335977; color: white; border-color: #000000; text-decoration: none;">LEARN MORE!</button></a>' +
+        '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
+        ' <p style = "text-align: center;"><b>ORACLE</b> is an American multinational computer technology corporation ' +
+        'headquartered in Redwood Shores, California. The company sells database software and technology, ' +
+        'cloud engineered systems, and enterprise software products.<br>' +
+        '<a href="https://www.oracle.com/au/index.html"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
@@ -184,11 +235,11 @@ function insertSASMarker(map) {
     var contentSAS =
         ' <h1 style="text-align: center;">SAS INSTITUTE</h1>' +
         ' <img src="./assets/Images/sasInfoImg.jpg" ' +
-        '      style="float:left; width: 34%; margin-right:10px;">' +
+        '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
         ' <p style = "text-align: center;"><b>SAS</b> is an American multinational developer ' +
         'of analytics software based in Cary, North Carolina. SAS develops and markets a suite of analytics software, ' +
-        'which helps access, manage, analyze and report on data to aid in decision-making.<br>' +
-        '<a href="https://www.sas.com/en_us/home.html"><button type="button" class="common-btn-styling" style="margin-top: 30px; padding: 6px; border-radius: 20%; background-color: #335977; color: white; border-color: #000000; text-decoration: none;">LEARN MORE!</button></a>' +
+        'which helps access, manage, analyze data<br>' +
+        '<a href="https://www.sas.com/en_us/home.html"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
@@ -222,7 +273,8 @@ function insertAmazonMarker(map) {
     var AmazonLocationMarker = new google.maps.Marker({
         position: AmazonLocation,
         icon: {
-            url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+            url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+            scaledSize: new google.maps.Size(25, 25)
         }
     });
 
@@ -232,11 +284,11 @@ function insertAmazonMarker(map) {
     var contentAmazon =
         ' <h1 style="text-align: center;">AMAZON</h1>' +
         ' <img src="./assets/Images/amazonInfoImg.jpg" ' +
-        '      style="float:left; width: 34%; margin-right:10px;">' +
+        '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
         ' <p style = "text-align: center;"><b>Amazon.com</b> is an American multinational technology ' +
         'company based in Seattle, Washington, that focuses on ' +
         'e - commerce, cloud computing, digital streaming, and artificial intelligence.<br>' +
-        '<a href="https://en.wikipedia.org/wiki/Amazon_(company)"><button type="button" class="common-btn-styling" style="margin-top: 30px; padding: 6px; border-radius: 20%; background-color: #335977; color: white; border-color: #000000; text-decoration: none;">LEARN MORE!</button></a>' +
+        '<a href="https://www.aboutamazon.com/"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
