@@ -154,7 +154,7 @@ body {
 
 /******************** NEWSLETTER SECTION STARTS HERE **********************/
 #newsletter-section {
-    border-top: 3px solid #005e8a;
+    border-top: 5px solid #005e8a;
     border-bottom: 5px solid #005e8a;
     padding: 15px;
     color: #d4d4dc;
@@ -519,6 +519,7 @@ figure:hover > img {
     top: 0px;
     bottom: 0px;
     height: auto;
+    border-bottom: 5px solid #005e8a;
 }
 
 #machine-header-section::before {
@@ -704,6 +705,7 @@ figure:hover > img {
     top: 0px;
     bottom: 0px;
     height: auto;
+    border-bottom: 5px solid #005e8a;
 }
 
 
@@ -735,7 +737,8 @@ figure:hover > img {
     position: relative;
     top: 0px;
     bottom: 0px;
-    height: 100vh;
+    height: auto;
+    border-bottom: 5px solid #005e8a;
 }
 
 #world-header-section::before {
@@ -790,6 +793,9 @@ figure:hover > img {
 }
 
 
+
+
+
 /********************* CONTACT US PAGE STARTS HERE ***************/
 
 #contactUs-header-section {
@@ -801,7 +807,8 @@ figure:hover > img {
     position: relative;
     top: 0px;
     bottom: 0px;
-    height: 100vh;
+    height: auto;
+    border-bottom: 5px solid #005e8a;
 }
 
 #contactUs-header-section::before {
