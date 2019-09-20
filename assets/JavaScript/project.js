@@ -355,8 +355,3 @@ function insertAmazonMarker(map) {
 // Add a DOM listener that will execute the initMap function 
 // on window load (when the page is loaded)
 google.maps.event.addDomListener(window, 'load', initialiseGoogleMap);
-
-
-
-
-// DATA EXCEL SECTION
