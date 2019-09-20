@@ -4,7 +4,7 @@
 // Declare a variable for map
 var map;
 // Get lattitude and longitude of Canberra Centre
-var unitedStatesAmerica = new google.maps.LatLng(51.5073509, -0.1277583);
+var unitedStatesAmerica = new google.maps.LatLng(37.090240, -95.712891);
 // Initialise the map
 function initialiseGoogleMap() {
     // Define the properties for Canberra Centre map

@@ -591,8 +591,7 @@ figure:hover > img {
 .text-center {
     position: relative !important;
     width: 100% !important;
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+    margin-top: 15px;
 }
 
 
@@ -824,4 +823,173 @@ figure:hover > img {
 #aboutUs-section .col-md-6 {
     padding: 0px !important;
     text-align: center !important;
+}
+
+
+
+/* TEAM MEMBERS SECTION */
+
+#team-info .name-container {
+    text-align: center;
+}
+
+
+
+
+#team-info .name-container {
+    transition: ease-out 0.7s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#team-info .name-container h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+#team-info .content {
+    color: black;
+    font-size: 15px;
+    position: relative;
+    bottom: 33px;
+
+}
+
+#team-info .content h1 {
+    font-size: 32px;
+    padding: 15px;
+}
+
+/*
+#team-info .member-image:hover {
+    opacity: 2;
+    transition: 0.7s !important;
+}
+*/
+
+#team-info .carousel-inner:hover .member-image img {
+    filter: brightness(0.5) !important;
+    transition: 0.7s !important;
+}
+
+#team-info .carousel-inner:hover .name-container {
+    opacity: 9;
+    filter: brightness(0.9) !important;
+    transition: 0.7s !important;
+}
+
+#team-info .carousel-inner:hover .content {
+    color: #ffffff;
+
+}
+
+#team-info .text-container .buttons .common-btn {
+    margin: 10px;
+    background-color: #494b61;
+    color: #ffffff;
+    border-radius: 16%;
+    padding: 3px 10px;
+    border-color: transparent !important;
+}
+
+#team-info .text-container .buttons .common-btn:hover {
+    background-color: transparent;
+    transition: ease-in-out 0.6s;
+    border-radius: 30%;
+    border-color: lightgray !important;
+}
+
+
+#aboutUs-second-background-img {
+    background-image: url(../Images/aboutUsBack2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.6;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Contact Us Section */
+
+.contact-us-section {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgb(48, 60, 75);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(5, 121, 182);
+}
+
+.input-sections {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-sections,
+.message-section {
+    width: 48%;
+}
+
+.input-sections .input,
+.message-section textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #3989b2;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+.message-section textarea {
+    height: 212px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #c5ecfd;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c5ecfd;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c5ecfd;
+}
+
+.button {
+    background: #6cbbdf;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: transparent !important;
+    transition: ease-in-out 0.7s;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+
+.map-card {
+    margin-bottom: 40px;
 }
