@@ -1011,6 +1011,20 @@ figure:hover > img {
 
     #index-header-section {
         background-image: url(../Images/heroShowcase-iphoneplus.jpg);
+        background-size: cover;
+        height: auto;
+        min-height: 100%;
+        background-position: center;
+    }
+
+    #index-header-section::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #000000;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
     }
 
 }
