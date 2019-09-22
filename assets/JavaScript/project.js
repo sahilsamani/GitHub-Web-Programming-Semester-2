@@ -66,10 +66,10 @@ function insertGoogleMarker(map) {
         ' <h1 style="text-align: center;">Google CORPORATION</h1>' +
         ' <img src="./assets/Images/googleInfoImg.jpg"' +
         '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
-        ' <p style = "text-align: center;"><b>IBM</b> is an American multinational technology company ' +
+        ' <p style = "text-align: center;"><b>GOOGLE</b> is an American multinational technology company ' +
         'that specializes in Internet - related services and products which include online advertising technologies, ' +
         'search engine <br>' +
-        '<a href="https://about.google/"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        '<a href="https://en.wikipedia.org/wiki/Google"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
     var infoGoogle = new google.maps.InfoWindow({
@@ -109,7 +109,7 @@ function insertIBMMarker(map) {
         '   style="float:left; width: 34%; border-radius: 30px 50px 0 50px; float: left; width: 34% !important;">' +
         ' <p style = "text-align: center;"><b>IBM</b> is an American multinational information technology company ' +
         'headquartered in Armonk, New York. The company produces and sells computer hardware, middleware and software, <br>' +
-        '<a href="https://www.ibm.com/au-en"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        '<a href="https://en.wikipedia.org/wiki/IBM"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
     var infoIBM = new google.maps.InfoWindow({
@@ -150,7 +150,7 @@ function insertMicrosoftMarker(map) {
         ' <p style = "text-align: center;"><b>MICROSOFT</b> is an American multinational technology company ' +
         'with headquarters in Redmond, Washington. The company develops, manufactures, licenses, supports, ' +
         'and sells computer software <br>' +
-        '<a href="https://www.microsoft.com/en-au"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        '<a href="https://en.wikipedia.org/wiki/Microsoft"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
@@ -195,7 +195,7 @@ function insertOracleMarker(map) {
         ' <p style = "text-align: center;"><b>ORACLE</b> is an American multinational computer technology corporation ' +
         'headquartered in Redwood Shores, California. The company sells database software and technology, ' +
         'cloud engineered systems, and enterprise software products.<br>' +
-        '<a href="https://www.oracle.com/au/index.html"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        '<a href="https://en.wikipedia.org/wiki/Oracle_Corporation"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
@@ -239,7 +239,7 @@ function insertSASMarker(map) {
         ' <p style = "text-align: center;"><b>SAS</b> is an American multinational developer ' +
         'of analytics software based in Cary, North Carolina. SAS develops and markets a suite of analytics software, ' +
         'which helps access, manage, analyze data<br>' +
-        '<a href="https://www.sas.com/en_us/home.html"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        '<a href="https://en.wikipedia.org/wiki/SAS_Institute"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
@@ -288,7 +288,7 @@ function insertAmazonMarker(map) {
         ' <p style = "text-align: center;"><b>Amazon.com</b> is an American multinational technology ' +
         'company based in Seattle, Washington, that focuses on ' +
         'e - commerce, cloud computing, digital streaming, and artificial intelligence.<br>' +
-        '<a href="https://www.aboutamazon.com/"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
+        '<a href="https://en.wikipedia.org/wiki/Amazon_(company)"><button type="button" class="common-btn-styling">LEARN MORE!</button></a>' +
         ' </p>';
 
 
@@ -308,44 +308,6 @@ function insertAmazonMarker(map) {
         infoAmazon.open(map, AmazonLocationMarker);
     });
 }
-
-
-
-/////////////Information Window Function
-
-//Google Information Window
-//function insertGoogleInfo(map) {
-//    // Canberra Museum and Gallery
-//    var googleInfoGallery =
-//        new google.maps.LatLng(-35.2818211, 149.1289204);
-//    var markerCanberraMuseumGallery = new google.maps.Marker({
-//        position: canberraMuseumGallery,
-//    });
-//
-//    markerCanberraMuseumGallery.setMap(map);
-//
-//    var contentCanberraMuseumGallery =
-//        ' <h1>Canberra Museum and Gallery</h1>' +
-//        ' <img src="../images/CBRMuseumGallery.jpg" ' +
-//        '      style="float:left; width:25%; margin-right:10px;">' +
-//        ' <p><b>Canberra Museum and Gallery</b> is an art gallery ' +
-//        'and museum in Canberra, the capital of Australia. ' +
-//        'It is located on London Circuit, in Civic in ' +
-//        'the centre of the city. The gallery was opened ' +
-//        'on 13 February, 1998.<br>' +
-//        '<a href="https://en.wikipedia.org/wiki/Canberra_' +
-//        'Museum_and_Gallery">Wikipedia</a>' +
-//        ' </p>';
-//
-//    var infoCanberraMuseumGallery = new google.maps.InfoWindow({
-//        content: contentCanberraMuseumGallery
-//    });
-//
-//    google.maps.event.addListener(markerCanberraMuseumGallery, 'click',
-//        function () {
-//            infoCanberraMuseumGallery.open(map, markerCanberraMuseumGallery);
-//        });
-//}
 
 
 

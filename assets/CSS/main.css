@@ -56,7 +56,7 @@ body {
     background-color: #3d3d3f;
     /*    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);*/
     color: white;
-    box-shadow: 0 17px 28px 0 rgba(54, 68, 86, 1);
+    box-shadow: 13px 3px 35px 25px rgba(54, 68, 86, 1) !important;
 }
 
 .nav-button:hover {
@@ -570,6 +570,10 @@ figure:hover > img {
 
 }
 
+.content p {
+    font-weight: 600;
+}
+
 /* COL-MD 6 - SECTION*/
 
 #c-blocks .col-md-6:hover {
@@ -609,6 +613,7 @@ figure:hover > img {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 20% !important;
+    cursor: pointer;
 
 
 }
@@ -619,6 +624,7 @@ figure:hover > img {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 20% !important;
+    cursor: pointer;
 
 
 }
@@ -630,6 +636,7 @@ figure:hover > img {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 20% !important;
+    cursor: pointer;
 
 
 }
@@ -638,6 +645,7 @@ figure:hover > img {
     filter: brightness(0.6) !important;
     transition: 0.7s !important;
     border-radius: 20% !important;
+    cursor: pointer;
 }
 
 
@@ -665,6 +673,7 @@ figure:hover > img {
     transition: 0.7s !important;
     border-radius: 20% !important;
     margin: 10px 0px 0px 0px;
+    cursor: pointer;
 
 }
 
@@ -673,6 +682,7 @@ figure:hover > img {
     transition: 0.7s !important;
     border-radius: 20% !important;
     margin: 10px 0px 0px 0px;
+    cursor: pointer;
 
 }
 
@@ -1056,6 +1066,55 @@ figure:hover > img {
 }
 
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 834px) {
+    .media-section {
+        text-align: center !important;
+        margin-left: 36px;
+    }
+}
+
+
 /* MEDIA QUERY FOR IPHONE 6, 6s, 7, 8 */
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {}
+
+
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* STYLES GO HERE */
+    /* For IPad Mini and IPad Air ************/
+
+
+    #t-blocks .common-title {
+        margin-top: 8px !important;
+        font-size: 27px !important;
+    }
+
+    #t-blocks .common-para {
+        padding: 4px !important;
+        font-size: 12px !important;
+    }
+
+    #t-blocks .t-block-btn {
+        position: relative !important;
+        bottom: 13px !important;
+    }
+
+    #footer-section .common-links {
+        margin: 0 auto !important;
+
+
+    }
+}
+
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1024px) {
+
+    #t-blocks .common-title {
+        margin-top: 40px !important;
+        font-size: 27px !important;
+    }
+}
