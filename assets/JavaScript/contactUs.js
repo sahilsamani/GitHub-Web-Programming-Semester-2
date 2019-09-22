@@ -9,7 +9,7 @@ function initialiseGoogleMap() {
     // Define the properties for Melbourne map
     var australiaMap = {
         center: australia,
-        zoom: 2,
+        zoom: 4,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
